@@ -1,0 +1,55 @@
+<!-- Create a registration form with labels, placeholders, required fields, radio buttons, checkboxes, select options, date input, file upload, and submit button. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter name"
+        required
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+        required
+      /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female<br /><br />
+
+      <label>Hobbies:</label>
+      <input type="checkbox" name="hobby" value="reading" /> Reading
+      <input type="checkbox" name="hobby" value="sports" /> Sports<br /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option></select
+      ><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" /><br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

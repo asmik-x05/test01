@@ -1,0 +1,27 @@
+<!-- Create a photo gallery using flexbox with hover zoom effect. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <style>
+      .gallery {
+        display: flex;
+        gap: 10px;
+      }
+      img {
+        width: 150px;
+        transition: transform 0.3s;
+      }
+      img:hover {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="https://shorturl.at/2CPmq" />
+      <img src="https://shorturl.at/9YCIH" />
+    </div>
+  </body>
+</html>
